@@ -7,10 +7,11 @@
     <title>Blanchard</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 </head>
 
 <body>
@@ -105,7 +106,10 @@
                     <svg class="header__svg--search" tabindex="0">
                         <use xlink:href='../img/sprite.svg#search' />
                     </svg>
-                    <input class="header__div--input" placeholder="Поиск по сайту">
+                    <div class="header__div--input-wrapper">
+                        <input class="header__div--input" placeholder="Поиск по сайту">
+                    </div>
+
                 </div>
             </div>
         </header>
@@ -160,58 +164,44 @@
                 </div>
 
                 <div class="gallery__right-part">
-                
-                    <!-- Slider main container -->
+
                     <div class="swiper-container">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide">
-                                <div>
-                                    <img src="./img/1.1.jpg" alt="" class="gallery__swiper">
-                                    <img src="./img/1.2.jpg" alt="" class="gallery__swiper gallery__swiper--second">
-                                    <img src="./img/1.3.jpg" alt="" class="gallery__swiper">
-                                </div>
-                                <div>
-                                    <img src="./img/1.4.jpg" alt="" >
-                                    <img src="./img/1.5.jpg" alt="" class="gallery__swiper--second">
-                                    <img src="./img/1.6.jpg" alt="" >
-                                </div>
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f11111
                             </div>
                             <div class="swiper-slide">
-                                <div>
-                                    <img src="./img/2.1.jpg" alt="" class="gallery__swiper">
-                                    <img src="./img/2.2.jpg" alt="" class="gallery__swiper gallery__swiper-second">
-                                    <img src="./img/2.3.jpg" alt="" class="gallery__swiper">
-                                </div>
-                                <div>
-                                    <img src="./img/2.4.jpg" alt="" >
-                                    <img src="./img/2.5.jpg" alt="" class="gallery__swiper-second">
-                                    <img src="./img/2.6.jpg" alt="" >
-                                </div>
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f22222
                             </div>
                             <div class="swiper-slide">
-                                <div>
-                                    <img src="./img/2.7.jpg" alt="" class="gallery__swiper">
-                                    <img src="./img/2.8.jpg" alt="" class="gallery__swiper gallery__swiper-second">
-                                    <img src="./img/2.9.jpg" alt="" class="gallery__swiper">
-                                </div>
-                                <div>
-                                    <img src="./img/2.10.jpg" alt="" >
-                                    <img src="./img/2.11.jpg" alt="" class="gallery__swiper-second">
-                                    <img src="./img/2.12.jpg" alt="" >
-                                </div>
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f33333
                             </div>
-
+                            <div class="swiper-slide">
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
+                            </div>
+                            <div class="swiper-slide">
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
+                            </div>
+                            <div class="swiper-slide">
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
+                            </div>
+                            <div class="swiper-slide">
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
+                            </div>
+                            <div class="swiper-slide">
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
+                            </div>
+                            <div class="swiper-slide">
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
+                            </div>
+                            <div class="swiper-slide">
+                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
+                            </div>
                         </div>
-                        <!-- If we need pagination -->
+                        <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-
                     </div>
+
                 </div>
 
             </section>
@@ -219,13 +209,15 @@
             <!--catalog-->
             <section class="container-block catalog">
                 <div class="catalog__wrapper-h2-img">
-                <h2 class="catalog__h2">Каталог</h2>
-                <img src="./img/f1.png" class="catalog__img">
-                <img src="./img/f2.png" class="catalog__img">
-                <img src="./img/f3.png" class="catalog__img">
-                <img src="./img/f4.png" class="catalog__img">
-                <img src="./img/f5.png" class="catalog__img">
-            </div>
+                    <h2 class="catalog__h2">Каталог</h2>
+                    <svg class="header__svg--logo" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href='../img/sprite.svg#f1' />
+                    </svg>
+                    <img src="./img/f2.png" class="catalog__img">
+                    <img src="./img/f3.png" class="catalog__img">
+                    <img src="./img/f4.png" class="catalog__img">
+                    <img src="./img/f5.png" class="catalog__img">
+                </div>
 
                 <p class="catalog__p">
                     Акционеры крупнейших компаний, которые представляют собой яркий
@@ -259,80 +251,87 @@
                     <div class="catalog__half">
                         <div id="accordion">
                             <div class="accordion-container">
-                              <h3 class="catalog__accordion-h3">C 1400 по 1499 гг.</h3>
-                              <div class="catalog__read-more"></div>
+                                <h3 class="catalog__accordion-h3">C 1400 по 1499 гг.</h3>
+                                <div class="catalog__read-more"></div>
                             </div>
-                            
+
                             <p class="accordion-p-faq accordion-height">
-                              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к
-                              новым свершениям, 
+                                Являясь всего лишь частью общей картины, непосредственные участники технического
+                                прогресса призывают нас к
+                                новым свершениям,
                             </p>
-                          
+
                             <div class="accordion-container">
-                              <h3 class="catalog__accordion-h3">C 1500 по 1599 гг.</h3>
-                              <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
+                                <h3 class="catalog__accordion-h3">C 1500 по 1599 гг.</h3>
+                                <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
                             </div>
-                  
+
                             <p class="accordion-p-faq accordion-height">
-                              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к
-                              новым свершениям, которые, в свою очередь, 
+                                Являясь всего лишь частью общей картины, непосредственные участники технического
+                                прогресса призывают нас к
+                                новым свершениям, которые, в свою очередь,
                             </p>
-                  
+
                             <div class="accordion-container">
-                              <h3 class="catalog__accordion-h3">C 1600 по 1699 гг.</h3>
-                              <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
+                                <h3 class="catalog__accordion-h3">C 1600 по 1699 гг.</h3>
+                                <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
                             </div>
-                  
+
                             <p class="accordion-p-faq accordion-height">
-                              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к
-                              новым свершениям, которые, в свою очередь,
+                                Являясь всего лишь частью общей картины, непосредственные участники технического
+                                прогресса призывают нас к
+                                новым свершениям, которые, в свою очередь,
                             </p>
-                  
+
                             <div class="accordion-container">
-                              <h3 class="catalog__accordion-h3">C 1700 по 1799 гг.
-                              </h3>
-                              <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
+                                <h3 class="catalog__accordion-h3">C 1700 по 1799 гг.
+                                </h3>
+                                <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
                             </div>
-                  
+
                             <p class="accordion-p-faq accordion-height">
-                              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к
-                              новым свершениям, которые, в свою очередь, 
+                                Являясь всего лишь частью общей картины, непосредственные участники технического
+                                прогресса призывают нас к
+                                новым свершениям, которые, в свою очередь,
                             </p>
-                  
+
                             <div class="accordion-container">
-                              <h3 class="catalog__accordion-h3">C 1800 по 1899 гг.</h3>
-                              <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
+                                <h3 class="catalog__accordion-h3">C 1800 по 1899 гг.</h3>
+                                <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
                             </div>
-                  
+
                             <p class="accordion-p-faq accordion-height">
-                              Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к
-                              новым свершениям, 
+                                Являясь всего лишь частью общей картины, непосредственные участники технического
+                                прогресса призывают нас к
+                                новым свершениям,
                             </p>
 
                             <div class="accordion-container">
                                 <h3 class="catalog__accordion-h3">C 1900 по 1999 гг.</h3>
                                 <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
-                              </div>
-                    
-                              <p class="accordion-p-faq accordion-height">
-                                Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к
-                                новым свершениям, 
-                              </p>
+                            </div>
+
+                            <p class="accordion-p-faq accordion-height">
+                                Являясь всего лишь частью общей картины, непосредственные участники технического
+                                прогресса призывают нас к
+                                новым свершениям,
+                            </p>
 
 
-                              <div class="accordion-container">
+                            <div class="accordion-container">
                                 <h3 class="catalog__accordion-h3">C 2000 г.</h3>
                                 <div class="catalog__read-more" aria-label="Кнопка показать больше информации"></div>
-                              </div>
-                    
-                              <p class="accordion-p-faq accordion-height">
-                                Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к
-                                новым свершениям, 
-                              </p>
-                  
+                            </div>
+
+                            <p class="accordion-p-faq accordion-height">
+                                Являясь всего лишь частью общей картины, непосредственные участники технического
+                                прогресса призывают нас к
+                                новым свершениям,
+                            </p>
+
                             <div class="accordion-container"></div>
-                  
-                          </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -391,7 +390,8 @@
                                         «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                                     </h3>
                                     <p class="events__p">
-                                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
+                                        Высокий уровень вовлечения представителей целевой аудитории является четким
+                                        доказательством простого факта.
                                     </p>
                                 </div>
                                 <a href="#" class="events__a">Подробнее</a>
@@ -417,7 +417,62 @@
                                         Выставка «Формация 2020»
                                     </h3>
                                     <p class="events__p">
-                                        Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
+                                        Идейные соображения высшего порядка, а также современная методология разработки
+                                        играет важную роль в формировании глубокомысленных рассуждений.
+                                    </p>
+                                </div>
+                                <a href="#" class="events__a">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="events__div">
+                        <img src="./img/e4.jpg" alt="Книжная гравюра">
+                        <div class="events__div--description">
+                            <div class="events__div--description-wrapper-p">
+                                <p class="events__p--place-date">
+                                    Третьяковка на Крымском валу
+                                </p>
+                                <p class="events__p--place-date">
+                                    с 30 марта по 30 апреля
+                                </p>
+                            </div>
+
+                            <div class="events__h3-p-a-container">
+                                <div class="events__h3-p-container">
+                                    <h3 class="events__h3">
+                                        XXIV Международная биеннале молодого искусства
+                                    </h3>
+                                    <p class="events__p">
+                                        Внезапно, реплицированные с зарубежных источников, современные исследования.
+                                    </p>
+                                </div>
+                                <a href="#" class="events__a">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="events__div">
+                        <img src="./img/e5.jpg" alt="Книжная гравюра">
+                        <div class="events__div--description">
+                            <div class="events__div--description-wrapper-p">
+                                <p class="events__p--place-date">
+                                    ММАМ
+                                </p>
+                                <p class="events__p--place-date">
+                                    с 8 апреля по 20 мая
+                                </p>
+                            </div>
+
+                            <div class="events__h3-p-a-container">
+                                <div class="events__h3-p-container">
+                                    <h3 class="events__h3">
+                                        Джон Винзор. Фотографии из серии «Метафора серебра»
+                                    </h3>
+                                    <p class="events__p">
+                                        Один из ведущих флорентийских художников Кватроченто, 
+                                        основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
                                     </p>
                                 </div>
                                 <a href="#" class="events__a">Подробнее</a>
@@ -428,7 +483,7 @@
 
                 </div>
                 <div class="events__button--align">
-                    <button class="events__button">Все события</button>
+                    <button class="events__button button__transparent">Все события</button>
                 </div>
             </section>
 
@@ -448,14 +503,100 @@
                             <span class="check__box"></span>
                             Бестселлеры
                         </label>
-
-                    
                     </div>
+
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Искусство
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Архитектура
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Дизайн
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Мода
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Детям
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Художественная литература
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Публицистика
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Путеводители
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Философия
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Учебная литература
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="check">
+                            <input class="check__input" type="checkbox" required>
+                            <span class="check__box"></span>
+                            Журналы и газеты
+                        </label>
+                    </div>
+
+
 
 
                     <h4>
                         Цена
                     </h4>
+
+                    <div class="editions__price">
+                        <span>От</span>
+                        <input class="edition__input">
+                        <span>до</span>
+                        <input class="edition__input">
+                        <span>руб.</span>
+                    </div>
                 </div>
                 <div class="editions__right-part">
 
@@ -472,14 +613,39 @@
                     обеспечение нашей деятельности однозначно фиксирует необходимость своевременного
                     выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными
                     до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-                    Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности
-                    однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
-                    И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно
-                    в разрезе маркетинговых и финансовых предпосылок. Банальные, но неопровержимые выводы,
-                    а также представители современных социальных резервов призывают нас к новым свершениям, которые,
-                    в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
-                    Подробнее:
-                    <a href="#">blanchard-art.ru/projects/about</a>
+                    Прежде всего, постоянное информационно-пропагандистское
+                <div class="tooltip">
+                    <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
+                        <svg>
+                            <use xlink:href='../img/sprite.svg#tooltip' />
+                        </svg>
+                    </span>
+                    <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
+                </div>
+                обеспечение нашей деятельности
+                однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
+                И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <div class="tooltip">
+                    <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
+                        <svg>
+                            <use xlink:href='../img/sprite.svg#tooltip' />
+                        </svg>
+                    </span>
+                    <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
+                </div>
+                исключительно
+                в разрезе маркетинговых и финансовых <div class="tooltip">
+                    <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
+                        <svg>
+                            <use xlink:href='../img/sprite.svg#tooltip' />
+                        </svg>
+                    </span>
+                    <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
+                </div>
+                предпосылок. Банальные, но неопровержимые выводы,
+                а также представители современных социальных резервов призывают нас к новым свершениям, которые,
+                в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
+                Подробнее:
+                <a href="#">blanchard-art.ru/projects/about</a>
                 </p>
                 <h3>
                     Партнёры проектов:
@@ -490,26 +656,26 @@
             </section>
 
             <!--contacts-->
-            <section class="container-block">
-                <h2>
+            <section>
+                <h2 class="container-block contacts__h2">
                     Контакты
                 </h2>
                 <div class="contacts__div-wrapper">
                     <div class="contacts__left-part">
                         <h3>Шоурум №4
                         </h3>
-                        <h4>
+                        <h4 class="contacts__h4">
                             Леонтьевский переулок, дом 5, строение 1
                         </h4>
-                        <p>
+                        <p class="contacts__p--request-call">
                             Заказать обратный звонок
                         </p>
-                        <input>
-                        <input>
-                        <button class="contacts__button">
+                        <input class="contacts__input" placeholder="Имя*">
+                        <input class="contacts__input" placeholder="Телефон*">
+                        <button class="contacts__button button__transparent" type="submit">
                             Заказать
                         </button>
-                        <p>
+                        <p class="contacts__p--reach">
                             Связаться в один клик
                         </p>
                         <svg class="contacts__svg--mobile-connection">
@@ -550,6 +716,7 @@
         </footer>
 
     </div>
+    
 
 
     <!--select-->
@@ -572,9 +739,10 @@
         });
     </script>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
+
+
+
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -584,41 +752,47 @@
     </script>
 
 
-<!--map-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-</script>
-<script type="text/javascript">
-    ymaps.ready(init);
-    function init() {
 
-        var myMap = new ymaps.Map("map", {
-            center: [55.76, 37.64],
-            zoom: 7
-        }),
 
-            myGeoObject = new ymaps.GeoObject({
-                geometry: {
-                    type: "Point",
-                    coordinates: [55.76, 37.64]
-                }
+    <!--map-->
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7
+            }),
+
+                myGeoObject = new ymaps.GeoObject({
+                    geometry: {
+                        type: "Point",
+                        coordinates: [55.76, 37.64]
+                    }
+                });
+
+
+            myPlacemark = new ymaps.Placemark([48.872197, 2.354224], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/Subtract.png',
+                iconImageSize: [30, 42],
+                iconImageOffset: [-5, -38]
             });
 
 
-        myPlacemark = new ymaps.Placemark([48.872197, 2.354224], {}, {
-            iconLayout: 'default#image',
-            iconImageHref: './img/Subtract.png',
-            iconImageSize: [30, 42],
-            iconImageOffset: [-5, -38]
-        });
+            myMap.geoObjects.add(myGeoObject);
+            myMap.geoObjects.add(myPlacemark);
 
 
-        myMap.geoObjects.add(myGeoObject);
-        myMap.geoObjects.add(myPlacemark);
-
-
-    }
-</script>
+        }
+    </script>
 
 
 
