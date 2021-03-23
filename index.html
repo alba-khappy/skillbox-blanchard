@@ -121,7 +121,9 @@
             <p class="section-hero__p">Мы вынуждены отталкиваться от того, что реализация намеченных
                 плановых заданий создаёт предпосылки для новых предложений.
             </p>
+            
             <button class="section-hero__button" type="submit">Подписаться на рассылку</button>
+        
         </section>
 
         <main>
@@ -148,8 +150,8 @@
             <section class="container-block gallery">
                 <div class="gallery__left-part">
                     <div>
-                        <h2>Галлерея</h2>
-                        <p>Фильтровать по:</p>
+                        <h2 class="gallery__h2">Галлерея</h2>
+                        <p class="gallery__p--filter">Фильтровать по:</p>
                         <select name="select" id="gallerySelect" class="gallery__select">
                             <option value="">Автор</option>
                             <option>Направление</option>
@@ -164,43 +166,31 @@
                 </div>
 
                 <div class="gallery__right-part">
-
+                    
+                    
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f11111
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f22222
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f33333
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
-                            </div>
-                            <div class="swiper-slide">
-                                rtffrfhtrfhtfrtdefjde4dj5rf5edh5f
-                            </div>
+                        <div class="swiper-button-prev">
+                            <div class="swiper-container__swiper-button-prev"></div>
                         </div>
-                        <!-- Add Pagination -->
+                        <div class="swiper-button-next">
+                            <div class="swiper-container__swiper-button-prev"></div>
+                        </div>
+
                         <div class="swiper-pagination"></div>
-                    </div>
+
+                        
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                          <div class="swiper-slide gallery-swiper-slide" id="gallerySwiperSlide"><img src="./img/1.1.jpg"></div>
+                        </div>
 
                 </div>
 
@@ -501,7 +491,7 @@
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Бестселлеры
+                            <span class="check__box-text">Бестселлеры</span>
                         </label>
                     </div>
 
@@ -509,77 +499,77 @@
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Искусство
+                            <span class="check__box-text">Искусство</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Архитектура
+                            <span class="check__box-text">Архитектура</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Дизайн
+                            <span class="check__box-text">Дизайн</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Мода
+                            <span class="check__box-text">Мода</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Детям
+                            <span class="check__box-text">Детям</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Художественная литература
+                            <span class="check__box-text">Художественная литература</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Публицистика
+                            <span class="check__box-text">Публицистика</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Путеводители
+                            <span class="check__box-text">Путеводители</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Философия
+                            <span class="check__box-text">Философия</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Учебная литература
+                            <span class="check__box-text">Учебная литература</span>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label class="check">
                             <input class="check__input" type="checkbox" required>
                             <span class="check__box"></span>
-                            Журналы и газеты
+                            <span class="check__box-text">Журналы и газеты</span>
                         </label>
                     </div>
 
@@ -613,7 +603,7 @@
                     обеспечение нашей деятельности однозначно фиксирует необходимость своевременного
                     выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными
                     до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-                    Прежде всего, постоянное информационно-пропагандистское
+                    Прежде всего, постоянное информационно-пропагандистское </p>
                 <div class="tooltip">
                     <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
                         <svg>
@@ -622,9 +612,10 @@
                     </span>
                     <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
                 </div>
-                обеспечение нашей деятельности
+                <p class="progects__p"> обеспечение нашей деятельности
                 однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
-                И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <div class="tooltip">
+                И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+                </p> <div class="tooltip">
                     <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
                         <svg>
                             <use xlink:href='../img/sprite.svg#tooltip' />
@@ -632,8 +623,9 @@
                     </span>
                     <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
                 </div>
-                исключительно
-                в разрезе маркетинговых и финансовых <div class="tooltip">
+                <p class="progects__p">исключительно
+                в разрезе маркетинговых и финансовых</p>
+                 <div class="tooltip">
                     <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
                         <svg>
                             <use xlink:href='../img/sprite.svg#tooltip' />
@@ -641,9 +633,9 @@
                     </span>
                     <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
                 </div>
-                предпосылок. Банальные, но неопровержимые выводы,
+                <p class="progects__p"> предпосылок. Банальные, но неопровержимые выводы,
                 а также представители современных социальных резервов призывают нас к новым свершениям, которые,
-                в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
+                в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.</p>
                 Подробнее:
                 <a href="#">blanchard-art.ru/projects/about</a>
                 </p>
