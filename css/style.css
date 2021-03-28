@@ -436,7 +436,7 @@ h2 {
     margin-top: -11px;
 }
 
-.gallery__left-part> div > .choices > div.choices__list.choices__list--dropdown.is-active div.choices__list {
+.gallery__left-part> div > .choices > div.choices__list.choices__list--dropdown.is-active div.choices__list > div {
     padding: 0 20px;
 }
 
@@ -487,15 +487,20 @@ h2 {
 
 /*swiper*/
 
+.gallery__right-part {
+    width: 70%;
+}
+
 div.swiper-pagination.swiper-pagination-fraction {
     color: #FFFFFF;
     position: relative;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 58px;
+    margin-top: 25px;
 }
 
-.swiper-container {
-    width: 900px;
+.gallery__right-part >.swiper-container {
+    width: 1200px;
     height: 800px;
 }
 
@@ -505,29 +510,9 @@ div.swiper-pagination.swiper-pagination-fraction {
     height: calc((100% - 30px) / 2);
 }
 
-div#gallerySwiperSlide.swiper-slide.gallery-swiper-slide {
-    width: 350px;
-    height: 350px;
-}
-
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
-    content: '-';
-}
-
-.swiper-button-next {
-    top: 26px;
-    left: 100px;
-    transform: rotate(180deg);
-}
-
-.swiper-button-prev {
-    position: relative;
-    top: 25px;
-}
-
-.swiper-container__swiper-button-prev {
-    display: inline-flex;
-    margin-left: 25px;
+div.swiper-style > div.swiper-button-prev, div.swiper-button-next {
+    position: absolute;
+    top: 15px;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
@@ -537,31 +522,70 @@ div#gallerySwiperSlide.swiper-slide.gallery-swiper-slide {
     height: 30px;
     border-radius: 50%;
     background: #ECECEC;
-    transition: 0.3s;
 }
 
-.swiper-container__swiper-button-prev::after {
-    content: "";
-    position: absolute;
+div.swiper-style > div.swiper-button-next {
+    left: 120px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    content: '-';
+}
+
+.swiper-button-prev::after {
     width: 1px;
     height: 12px;
+    position: absolute;
     border-radius: 0;
     background: #222222;
-    transform: translate(1px, -4px) rotate(45deg);
+    transform: translate(-1px, -3px) rotate(45deg);
 }
 
-.swiper-container__swiper-button-prev::before {
-    content: "";
+.swiper-button-prev::before {
+    content: '';
     position: absolute;
     width: 12px;
     height: 1px;
-    transform: translate(0px, 5px) rotate(45deg);
+    transform: translate(-1px, 6px) rotate(45deg);
     background: #222222;
 }
 
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-    content: '-';
+.swiper-button-next::after {
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    border-radius: 0;
+    background: #222222;
+    transform: translate(1px, -3px) rotate(135deg);
 }
+
+.swiper-button-next::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    transform: translate(2px, 6px) rotate(135deg);
+    background: #222222;
+}
+
+div.swiper-button-prev:active, div.swiper-button-next:active {
+    outline: none;
+    border: 2px solid #7943A4;
+}
+
+div.swiper-button-prev:focus, div.swiper-button-next:focus {
+    background: #7943A4;
+    border: 2px solid #D1A9F0;
+    outline: none;
+}
+
+div.swiper-style > div.swiper-button-prev:hover, div.swiper-button-next:hover {
+    background: #9D5CD0;
+}
+
+
+
+
 
 /*catalog*/
 
@@ -633,6 +657,10 @@ h3 {
     border: none;
     padding: 0;
     border-top: 1px solid #CACACA;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: none;
 }
 
 div.ui-accordion .ui-accordion-header {
@@ -760,6 +788,10 @@ div.accordion-container.ui-state-hover ~  .accordion-p-faq.accordion-height.ui-a
     transform: rotate(180deg);
 }
 
+.accordion-span-flex {
+    display: flex;
+}
+
 /*events*/
 
 .events__wrapper-div {
@@ -768,6 +800,10 @@ div.accordion-container.ui-state-hover ~  .accordion-p-faq.accordion-height.ui-a
     flex-wrap: wrap;
     height: 700px;
     overflow: hidden;
+}
+
+.events__wrapper-div-open {
+    height: auto;
 }
 
 .events__div {
@@ -948,6 +984,8 @@ div.accordion-container.ui-state-hover ~  .accordion-p-faq.accordion-height.ui-a
 }
 
 .editions {
+    display: flex;
+    justify-content: space-between;
     background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -983,6 +1021,40 @@ h4 {
     line-height: 32px;
 }
 
+.edition__right-part {
+    width: 70%;
+}
+
+/*swiper-container-2*/
+
+.editions__right-part > .swiper-container {
+    width: 1000px;
+    height: 400px;
+}
+
+.swiper-container-2 {
+    width: 1200px;
+    height: 400px;
+}
+
+.swiper-slide-p1, .swiper-slide-p2{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.swiper-slide-p1 {
+    font-weight: 700;
+}
+
+.editions__button {
+    font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+background-color: transparent;
+}
+
 /*progects*/
 
 .progects__p {
@@ -1011,6 +1083,10 @@ h4 {
     width: 16px;
     height: 16px;
     cursor: pointer;
+}
+
+.tooltip__icon > svg {
+    outline: none;
 }
 
 .tooltip__icon svg {
