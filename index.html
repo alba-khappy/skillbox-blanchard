@@ -21,15 +21,15 @@
                 <svg class="header__svg--logo">
                     <use xlink:href='../img/sprite.svg#logo' />
                 </svg>
-                <nav>
+                <nav id="nav" class="header-nav">
                     <ul class="header__ul">
-                        <li class="header__li--black"><a class="header__li--a" href="#">О нас</a></li>
-                        <li class="header__li--black"><a class="header__li--a" href="#">Галерея</a></li>
-                        <li class="header__li--black"><a class="header__li--a" href="#">Каталог</a></li>
-                        <li class="header__li--black"><a class="header__li--a" href="#">События</a></li>
-                        <li class="header__li--black"><a class="header__li--a" href="#">Издания</a></li>
-                        <li class="header__li--black"><a class="header__li--a" href="#">Проекты</a></li>
-                        <li class="header__li--black"><a class="header__li--a" href="#">Контакты</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#about">О нас</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#gallery">Галерея</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#catalog">Каталог</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#events">События</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#editions">Издания</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#progects">Проекты</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
 
@@ -43,7 +43,7 @@
 
 
             <div class="header__div header__div--gray container-block">
-                <nav>
+                <nav class="header__div--nav-margin">
                     <ul class="header__ul">
                         <li class="header__li--gray" tabindex="0">
                             <select name="select" id="selectCustom" class="header__select">
@@ -102,6 +102,11 @@
                         </li>
                     </ul>
                 </nav>
+                <div>
+                    <svg class="header__svg--go">
+                        <use xlink:href='../img/sprite.svg#search' />
+                    </svg>
+                </div>
                 <div class="header__div header__div--svg">
                     <svg class="header__svg--search" tabindex="0">
                         <use xlink:href='../img/sprite.svg#search' />
@@ -128,7 +133,7 @@
 
         <main>
             <!--about-->
-            <section class="container-block">
+            <section class="container-block" id="#about">
                 <h2 class="about__h2">
                     О нас
                 </h2>
@@ -147,7 +152,7 @@
             </section>
 
             <!--gallery-->
-            <section class="container-block gallery">
+            <section class="container-block gallery" id="gallery">
                 <div class="gallery__left-part">
                     <div>
                         <h2 class="gallery__h2">Галлерея</h2>
@@ -195,7 +200,7 @@
             </section>
 
             <!--catalog-->
-            <section class="container-block catalog">
+            <section class="container-block catalog" id="#catalog">
                 <div class="catalog__wrapper-h2-img">
                     <h2 class="catalog__h2">Каталог</h2>
                     <svg class="header__svg--logo" xmlns="http://www.w3.org/2000/svg">
@@ -245,17 +250,37 @@
 
                             <p class="accordion-p-faq accordion-height">
                                 <span class="accordion-span-flex">
-                                    <span>Бенедетто ди Биндо Бергоньоне, Амброджо Биссоло, Франческо Больтраффио,
-                                        Джованни Бонсиньори, Франческо Боттичини, Рафаэлло Брамантино Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи</span>
-                                    <span>Веккьетта Андреа Верроккьо Доменико Гирландайо Беноццо Гоццоли Граначчи,
-                                        Франческо Грегорио ди Чекко Джованни да Удине Джованни ди Паоло Джорджоне</span>
-                                    <span>Парентино, Бернардо
-                                        Пезеллино
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло
-                                        Пинтуриккьо</span>
+                                    <span>
+                                        <a href="">Бенедетто ди Биндо Бергоньоне,</a>
+                                        <a href="">Амброджо Биссоло,</a>
+                                        <a href="">Франческо Больтраффио,</a>
+                                        <a href="">Джованни Бонсиньори,</a>
+                                        <a href="">Франческо Боттичини,</a>
+                                        <a href="">Рафаэлло Брамантино Бреа,</a>
+                                        <a href="">Людовико Бьяджо д’Антонио Туччи</a>
+                                    </span>
+
+                                    <span>
+                                        <a href="">Веккьетта</a>
+                                        <a href="">Андреа</a>
+                                        <a href="">Верроккьо</a>
+                                        <a href="">Доменико</a>
+                                        <a href="">Гирландайо</a>
+                                        <a href="">Беноццо Гоццоли Граначчи,</a>
+                                        <a href="">Франческо</a>
+                                        <a href="">Грегорио ди Чекко</a>
+                                        <a href="">Джованни да Удине</a>
+                                        <a href="">Джованни ди Паоло Джорджоне</a>
+                                    </span>
+
+                                    <span>
+                                        <a href="">Парентино, Бернардо</a>
+                                        <a href="">Пезеллино</a>
+                                        <a href="">Пьетро Перуджино</a>
+                                        <a href="">Перуцци, Бальдассаре</a>
+                                        <a href="">Пизанелло</a>
+                                        <a href="">Пинтуриккьо</a>
+                                    </span>
                                 </span>
                             </p>
 
@@ -337,7 +362,7 @@
             </section>
 
             <!--events-->
-            <section class="container-block">
+            <section class="container-block" id="events">
                 <h2>
                     События
                 </h2>
@@ -487,12 +512,12 @@
             </section>
 
             <!--editions-->
-            <section class="container-block editions">
+            <section class="container-block editions" id="editions">
                 <div class="editions__left-part">
                     <h2>
                         Издания
                     </h2>
-                    <h4>
+                    <h4 class="editions__h4--category">
                         Категории
                     </h4>
 
@@ -585,7 +610,7 @@
 
 
 
-                    <h4>
+                    <h4 class="editions__h4--price">
                         Цена
                     </h4>
 
@@ -593,7 +618,7 @@
                         <span>От</span>
                         <input class="edition__input">
                         <span>до</span>
-                        <input class="edition__input">
+                        <input class="edition__input edition__input--second">
                         <span>руб.</span>
                     </div>
                 </div>
@@ -627,10 +652,11 @@
             </section>
 
             <!--progects-->
-            <section class="container-block">
-                <h2>
+            <section class="container-block" id="progects">
+                <h2 class="progects__h2">
                     Проекты
                 </h2>
+                <div class="progects__p-wrapper">
                 <p class="progects__p">
                     Предварительные выводы: постоянное информационно-пропагандистское
                     обеспечение нашей деятельности однозначно фиксирует необходимость своевременного
@@ -672,18 +698,41 @@
                     в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
                 </p>
                 Подробнее:
-                <a href="#">blanchard-art.ru/projects/about</a>
+                <a href="#" class="progects__a">blanchard-art.ru/projects/about</a>
                 </p>
-                <h3>
+                </div>
+                <h3 class="progects__h3">
                     Партнёры проектов:
                 </h3>
+
+                <div class="swiper-container swiper-container-3 swiper-style" id="third-swiper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+
+
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p2.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p3.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p4.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p5.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p6.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p7.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p8.png"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p9.png"></div>
+
+                    </div>
+
+                </div>
                 <div>
 
                 </div>
             </section>
 
             <!--contacts-->
-            <section>
+            <section id="contacts">
                 <h2 class="container-block contacts__h2">
                     Контакты
                 </h2>
@@ -784,6 +833,7 @@
     <script src="./js/swiper.js"></script>
     <script src="./js/swiper-2.js"></script>
     <script src="./js/events.js"></script>
+    <script src="./js/nav.js"></script>
 
 
 
