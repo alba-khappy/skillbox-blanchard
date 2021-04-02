@@ -1,21 +1,21 @@
-const swiperSecond = new Swiper('.swiper-container-3', {
+const swiperThird = new Swiper('.swiper-3', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
     slidesPerColumn: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-3',
       type: 'fraction',
     },
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next-3',
+      prevEl: '.swiper-button-prev-3',
     },
   
     // And if we need scrollbar

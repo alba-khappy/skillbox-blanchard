@@ -163,7 +163,7 @@
                             <option>Техника</option>
                         </select>
                     </div>
-                    <p>
+                    <p class="gallery__p--download">
                         Вам предоставляется 10 бесплатных скачиваний.
                         Для увеличения количества скачиваний <a href="" class="gallery__a">авторизуйтесь</a>,
                         либо воспользуйтесь лицензией.
@@ -173,10 +173,10 @@
                 <div class="gallery__right-part">
 
 
-                    <div class="swiper-container swiper-style" id="first-swiper">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
+                    <div class="swiper-container swiper-1 swiper-style" id="first-swiper">
+                        <div class="swiper-button-prev swiper-button-prev-1"></div>
+                        <div class="swiper-pagination swiper-pagination-1"></div>
+                        <div class="swiper-button-next swiper-button-next-1"></div>
 
 
 
@@ -225,13 +225,13 @@
 
                     <div class="catalog__half">
                         <img src="./img/image 3.jpg" alt="men">
-                        <h3>
+                        <h3 class="catalog__h3--name">
                             Доменико Гирландайо
                         </h3>
                         <p class="catalog__half--p-date">
                             2 июня 1448 — 11 января 1494.
                         </p>
-                        <p>
+                        <p class="catalog__half--p-description">
                             Один из ведущих флорентийских художников Кватроченто,
                             основатель художественной династии, которую продолжили его
                             брат Давид и сын Ридольфо. Глава художественной мастерской,
@@ -624,26 +624,133 @@
                 </div>
                 <div class="editions__right-part">
 
-                    <div class="swiper-container swiper-container-2 swiper-style">
-                        <div class="swiper-button-prev">
+                    <div class="swiper-container swiper-2 swiper-style">
+                        <div class="swiper-button-prev swiper-button-prev-2">
 
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination swiper-pagination-2"></div>
+                        <div class="swiper-button-next swiper-button-next-2"></div>
 
 
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide gallery-swiper-slide"><img src="./img/ed1.jpg">
-                                <p class="swiper-slide-p1">Искусство цвета Иттен</p>
-                                <p class="swiper-slide-p2">Иттен, Иоханнес</p>
-                                <button type="button" class="editions__button button__transparent">Заказать</button>
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img src="./img/ed1.jpg" class="swiper-slide__img">
+                                <div class="swiper--description">
+                                    <div class="swiper--description--p-wrapper">
+                                        <p class="swiper-slide--p1">Искусство цвета</p>
+                                        <p class="swiper-slide--p2">Иттен, Иоханнес</p>
+                                        <button type="button"
+                                            class="editions__button button__transparent">Заказать</button>
+                                    </div>
+                                    <div>
+                                        <p class="swiper-slide--p-price">
+                                            620 руб
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="swiper-slide gallery-swiper-slide"><img src="./img/ed2.jpg"></div>
-                            <div class="swiper-slide gallery-swiper-slide"><img src="./img/ed3.jpg"></div>
-                            <div class="swiper-slide gallery-swiper-slide"><img src="./img/ed4.jpg"></div>
-                            <div class="swiper-slide gallery-swiper-slide"><img src="./img/ed5.jpg"></div>
-                            <div class="swiper-slide gallery-swiper-slide"><img src="./img/ed6.jpg"></div>
-                            <div class="swiper-slide gallery-swiper-slide"><img src="./img/ed7.jpg"></div>
+
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img src="./img/ed2.jpg" class="swiper-slide__img">
+                                <div class="swiper--description">
+                                    <div class="swiper--description--p-wrapper">
+                                        <p class="swiper-slide--p1">Типографика</p>
+                                        <p class="swiper-slide--p2">Рудер, Эмиль</p>
+                                        <button type="button"
+                                            class="editions__button button__transparent">Заказать</button>
+                                    </div>
+                                    <div>
+                                        <p class="swiper-slide--p-price">
+                                            2 450 руб
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img src="./img/ed3.jpg" class="swiper-slide__img">
+                                <div class="swiper--description">
+                                    <div class="swiper--description--p-wrapper">
+                                        <p class="swiper-slide--p1">Книга про буквы</p>
+                                        <p class="swiper-slide--p2">Гордон, Юрий</p>
+                                        <button type="button"
+                                            class="editions__button button__transparent">Заказать</button>
+                                    </div>
+                                    <div>
+                                        <p class="swiper-slide--p-price">
+                                            2 200 руб
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img src="./img/ed4.jpg" class="swiper-slide__img">
+                                <div class="swiper--description">
+                                    <div class="swiper--description--p-wrapper">
+                                        <p class="swiper-slide--p1">Николай Ильин</p>
+                                        <p class="swiper-slide--p2">Кричевский, Владимир </p>
+                                        <button type="button"
+                                            class="editions__button button__transparent">Заказать</button>
+                                    </div>
+                                    <div>
+                                        <p class="swiper-slide--p-price">
+                                            1 100руб
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img src="./img/ed5.jpg" class="swiper-slide__img">
+                                <div class="swiper--description">
+                                    <div class="swiper--description--p-wrapper">
+                                        <p class="swiper-slide--p1">Модульные сетки в граф...</p>
+                                        <p class="swiper-slide--p2">Мюллер-Брокманн, Йозеф </p>
+                                        <button type="button"
+                                            class="editions__button button__transparent">Заказать</button>
+                                    </div>
+                                    <div>
+                                        <p class="swiper-slide--p-price">
+                                            1 450 руб
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img src="./img/ed6.jpg" class="swiper-slide__img">
+                                <div class="swiper--description">
+                                    <div class="swiper--description--p-wrapper">
+                                        <p class="swiper-slide--p1">Эволюция графических ст...</p>
+                                        <p class="swiper-slide--p2">Хеллер, Чваст</p>
+                                        <button type="button"
+                                            class="editions__button button__transparent">Заказать</button>
+                                    </div>
+                                    <div>
+                                        <p class="swiper-slide--p-price">
+                                            3 200 руб
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide gallery-swiper-slide">
+                                <img src="./img/ed7.jpg" class="swiper-slide__img">
+                                <div class="swiper--description">
+                                    <div class="swiper--description--p-wrapper">
+                                        <p class="swiper-slide--p1">Искусство и визуальное в...</p>
+                                        <p class="swiper-slide--p2">Арнхейм, Рудольф </p>
+                                        <button type="button"
+                                            class="editions__button button__transparent">Заказать</button>
+                                    </div>
+                                    <div>
+                                        <p class="swiper-slide--p-price">
+                                            2 200 руб
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -657,73 +764,75 @@
                     Проекты
                 </h2>
                 <div class="progects__p-wrapper">
-                <p class="progects__p">
-                    Предварительные выводы: постоянное информационно-пропагандистское
-                    обеспечение нашей деятельности однозначно фиксирует необходимость своевременного
-                    выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными
-                    до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-                    Прежде всего, постоянное информационно-пропагандистское </p>
-                <div class="tooltip">
-                    <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
-                        <svg>
-                            <use xlink:href='../img/sprite.svg#tooltip' />
-                        </svg>
-                    </span>
-                    <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
-                </div>
-                <p class="progects__p"> обеспечение нашей деятельности
-                    однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
-                    И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
-                </p>
-                <div class="tooltip">
-                    <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
-                        <svg>
-                            <use xlink:href='../img/sprite.svg#tooltip' />
-                        </svg>
-                    </span>
-                    <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
-                </div>
-                <p class="progects__p">исключительно
-                    в разрезе маркетинговых и финансовых</p>
-                <div class="tooltip">
-                    <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
-                        <svg>
-                            <use xlink:href='../img/sprite.svg#tooltip' />
-                        </svg>
-                    </span>
-                    <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176 </div>
-                </div>
-                <p class="progects__p"> предпосылок. Банальные, но неопровержимые выводы,
-                    а также представители современных социальных резервов призывают нас к новым свершениям, которые,
-                    в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
-                </p>
-                Подробнее:
-                <a href="#" class="progects__a">blanchard-art.ru/projects/about</a>
-                </p>
+                    <p class="progects__p">
+                        Предварительные выводы: постоянное информационно-пропагандистское
+                        обеспечение нашей деятельности однозначно фиксирует необходимость своевременного
+                        выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными
+                        до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+                        Прежде всего, постоянное информационно-пропагандистское </p>
+                    <div class="tooltip">
+                        <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
+                            <svg>
+                                <use xlink:href='../img/sprite.svg#tooltip' />
+                            </svg>
+                        </span>
+                        <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176
+                        </div>
+                    </div>
+                    <p class="progects__p"> обеспечение нашей деятельности
+                        однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
+                        И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+                    </p>
+                    <div class="tooltip">
+                        <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
+                            <svg>
+                                <use xlink:href='../img/sprite.svg#tooltip' />
+                            </svg>
+                        </span>
+                        <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176
+                        </div>
+                    </div>
+                    <p class="progects__p">исключительно
+                        в разрезе маркетинговых и финансовых</p>
+                    <div class="tooltip">
+                        <span class="tooltip__icon" tabindex="0" title="Глава 2, страница 176">
+                            <svg>
+                                <use xlink:href='../img/sprite.svg#tooltip' />
+                            </svg>
+                        </span>
+                        <div role="tooltip" id="notifications-label" class="tooltip__content"> Глава 2, страница 176
+                        </div>
+                    </div>
+                    <p class="progects__p"> предпосылок. Банальные, но неопровержимые выводы,
+                        а также представители современных социальных резервов призывают нас к новым свершениям, которые,
+                        в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной
+                        неузнаваемости.
+                    </p>
+                    Подробнее:
+                    <a href="#" class="progects__a">blanchard-art.ru/projects/about</a>
+                    </p>
                 </div>
                 <h3 class="progects__h3">
                     Партнёры проектов:
                 </h3>
 
-                <div class="swiper-container swiper-container-3 swiper-style" id="third-swiper">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
+                <div class="swiper-container swiper-3 swiper-style" id="third-swiper">
 
-
+                    <div class="swiper-button-prev swiper-button-prev-3"></div>
 
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p2.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p3.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p4.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p5.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p6.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p7.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p8.png"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p9.png"></div>
-
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p2.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p3.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p4.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p5.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p6.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p7.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p8.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p9.png" class="progects__img"></div>
                     </div>
+
+                    <div class="swiper-button-next swiper-button-next-3"></div>
 
                 </div>
                 <div>
@@ -779,15 +888,21 @@
                 </svg>
             </div>
             <div class="footer__div-container">
-                <svg class="footer__svg--social">
-                    <use xlink:href='../img/sprite.svg#vk' />
-                </svg>
-                <svg class="footer__svg--social">
-                    <use xlink:href='../img/sprite.svg#inst' />
-                </svg>
-                <svg class="footer__svg--social">
-                    <use xlink:href='../img/sprite.svg#fb' />
-                </svg>
+                <a href="" class="footer__a">
+                    <svg class="footer__svg--social">
+                        <use xlink:href='../img/sprite.svg#vk' />
+                    </svg>
+                </a>
+                <a href="" class="footer__a">
+                    <svg class="footer__svg--social">
+                        <use xlink:href='../img/sprite.svg#inst' />
+                    </svg>
+                </a>
+                <a href="" class="footer__a">
+                    <svg class="footer__svg--social">
+                        <use xlink:href='../img/sprite.svg#fb' />
+                    </svg>
+                </a>
             </div>
         </footer>
 
@@ -832,6 +947,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/swiper-2.js"></script>
+    <script src="./js/swiper-3.js"></script>
     <script src="./js/events.js"></script>
     <script src="./js/nav.js"></script>
 
