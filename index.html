@@ -35,7 +35,7 @@
 
                 <a href="#" class="header__a">
                     <svg class="header__svg--go">
-                        <use xlink:href='../img/sprite.svg#go' />
+                        <use xlink:href='../img/sprite.svg#instagram' />
                     </svg>
                     Войти
                 </a>
@@ -102,16 +102,12 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
-                    <svg class="header__svg--go">
-                        <use xlink:href='../img/sprite.svg#search' />
-                    </svg>
-                </div>
+
                 <div class="header__div header__div--svg">
-                    <svg class="header__svg--search" tabindex="0">
-                        <use xlink:href='../img/sprite.svg#search' />
-                    </svg>
                     <div class="header__div--input-wrapper">
+                        <svg class="header__svg--loupe">
+                            <use xlink:href='../img/sprite.svg#loupe' />
+                        </svg>
                         <input class="header__div--input" placeholder="Поиск по сайту">
                     </div>
 
@@ -203,8 +199,8 @@
             <section class="container-block catalog" id="#catalog">
                 <div class="catalog__wrapper-h2-img">
                     <h2 class="catalog__h2">Каталог</h2>
-                    <svg class="header__svg--logo" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href='../img/sprite.svg#f1' />
+                    <svg class="">
+                        <use xlink:href='../img/sprite.svg#1' />
                     </svg>
                     <img src="./img/f2.png" class="catalog__img">
                     <img src="./img/f3.png" class="catalog__img">
@@ -821,15 +817,24 @@
                     <div class="swiper-button-prev swiper-button-prev-3"></div>
 
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p2.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p3.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p4.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p5.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p6.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p7.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p8.png" class="progects__img"></div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p9.png" class="progects__img"></div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p2.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p3.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p4.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p5.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p6.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p7.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p8.png" class="progects__img">
+                        </div>
+                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p9.png" class="progects__img">
+                        </div>
                     </div>
 
                     <div class="swiper-button-next swiper-button-next-3"></div>
@@ -864,10 +869,10 @@
                             Связаться в один клик
                         </p>
                         <svg class="contacts__svg--mobile-connection">
-                            <use xlink:href='../img/sprite.svg#whatsapp' />
+                            <use xlink:href='../img/sprite.svg#Whatsapp-Icon' />
                         </svg>
                         <svg class="contacts__svg--mobile-connection">
-                            <use xlink:href='../img/sprite.svg#telegram' />
+                            <use xlink:href='../img/sprite.svg#teleg' />
                         </svg>
                     </div>
                     <div class="contacts__right-part">
@@ -895,7 +900,7 @@
                 </a>
                 <a href="" class="footer__a">
                     <svg class="footer__svg--social">
-                        <use xlink:href='../img/sprite.svg#inst' />
+                        <use xlink:href='../img/sprite.svg#go' />
                     </svg>
                 </a>
                 <a href="" class="footer__a">
@@ -938,7 +943,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         $(function () {
-            $("#accordion").accordion();
+            $("#accordion").accordion({
+                collapsible: true
+            });
         });
     </script>
 

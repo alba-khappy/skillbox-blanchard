@@ -119,6 +119,11 @@ button {
     height: 100px;
 }
 
+.header__svg--loupe {
+width: 25px;
+height: 25px;
+}
+
 .header__ul {
     display: flex;
     justify-content: space-between;
@@ -209,6 +214,9 @@ button {
 }
 
 .header__div--input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 2px solid transparent;
     padding: 3px;
     z-index: 100;
