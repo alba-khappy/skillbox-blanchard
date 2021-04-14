@@ -123,7 +123,7 @@
                 плановых заданий создаёт предпосылки для новых предложений.
             </p>
 
-            <button class="section-hero__button" type="submit">Подписаться на рассылку</button>
+            <button class="section-hero__button" type="submit"><a href="#contacts">Подписаться на рассылку</a></button>
 
         </section>
 
@@ -178,7 +178,7 @@
 
 
                         <div class="swiper-wrapper">
-                           
+
                             <div class="swiper-slide gallery-swiper-slide">
                                 <img src="./img/1.1.jpg">
                                 <img src="./img/1.4.jpg">
@@ -226,24 +226,24 @@
             <section class="container-block catalog" id="#catalog">
                 <div class="catalog__wrapper-h2-img">
                     <h2 class="catalog__h2">Каталог</h2>
-                    <div class="catalog--wrapper-img">
+                    <div class="catalog--wrapper-img" data-path="one">
                         <img src="./img/f1.png" class="catalog__img" tabindex="0">
                     </div>
-                    <div class="catalog--wrapper-img">
-                       <img src="./img/f2.png" class="catalog__img" tabindex="0"> 
+                    <div class="catalog--wrapper-img" data-path="two">
+                        <img src="./img/f2.png" class="catalog__img" tabindex="0">
                     </div>
-                    <div class="catalog--wrapper-img">
+                    <div class="catalog--wrapper-img" data-path="three">
                         <img src="./img/f3.png" class="catalog__img" tabindex="0">
                     </div>
-                    <div class="catalog--wrapper-img">
+                    <div class="catalog--wrapper-img" data-path="four">
                         <img src="./img/f4.png" class="catalog__img" tabindex="0">
                     </div>
-                    <div class="catalog--wrapper-img">
-                      <img src="./img/f5.png" class="catalog__img" tabindex="0">  
+                    <div class="catalog--wrapper-img" data-path="five">
+                        <img src="./img/f5.png" class="catalog__img" tabindex="0">
                     </div>
                 </div>
 
-                <p class="catalog__p">
+                <p class="catalog__p tab-content tab-content-active" data-target="one">
                     Акционеры крупнейших компаний, которые представляют собой яркий
                     пример континентально-европейского типа политической культуры,
                     будут объявлены нарушающими общечеловеческие нормы этики и морали.
@@ -252,10 +252,23 @@
                     которые жаждут быть функционально разнесены на независимые элементы.
                 </p>
 
+                <p class="catalog__p tab-content" data-target="two">
+                    Die Aktionäre der größten Unternehmen, die ein anschauliches Beispiel
+                    für die kontinentaleuropäische Art der politischen Kultur darstellen,
+                    werden als Verstoß gegen die universellen Normen der Ethik und Moral erklärt.
+                    Als einziger Teil des Gesamtbildes, das die traditionelle Fertigung ersetzen will,
+                    bleibt die Nanotechnologie bis heute das Los vieler Liberaler, die bestrebt sind,
+                    funktional in unabhängige Elemente aufgeteilt zu werden.
+                </p>
+
                 <div class="catalog__wrapper">
 
                     <div class="catalog__half">
-                        <img src="./img/image 3.jpg" alt="men">
+                        <div class="catalog__half--left-part catalog__half--left-part--1 catalog__half--left-part--tab-content catalog__half--left-part--tab-content-active"
+                            data-target="one"></div>
+                        <div class="catalog__half--left-part catalog__half--left-part--2 catalog__half--left-part--tab-content"
+                            data-target="two"></div>
+
                         <h3 class="catalog__h3--name">
                             Доменико Гирландайо
                         </h3>
@@ -280,38 +293,32 @@
                             </div>
 
                             <p class="accordion-p-faq accordion-height">
-                                <span class="accordion-span-flex">
-                                    
-                                        <a href="">Бенедетто ди Биндо Бергоньоне,</a>
-                                        <a href="">Амброджо Биссоло,</a>
-                                        <a href="">Франческо Больтраффио,</a>
-                                        <a href="">Джованни Бонсиньори,</a>
-                                        <a href="">Франческо Боттичини,</a>
-                                        <a href="">Рафаэлло Брамантино Бреа,</a>
-                                        <a href="">Людовико Бьяджо д’Антонио Туччи</a>
-                                    
+                                <span class="accordion-div-flex">
 
-                                    
-                                        <a href="">Веккьетта</a>
-                                        <a href="">Андреа</a>
-                                        <a href="">Верроккьо</a>
-                                        <a href="">Доменико</a>
-                                        <a href="">Гирландайо</a>
-                                        <a href="">Беноццо Гоццоли Граначчи,</a>
-                                        <a href="">Франческо</a>
-                                        <a href="">Грегорио ди Чекко</a>
-                                        <a href="">Джованни да Удине</a>
-                                        <a href="">Джованни ди Паоло Джорджоне</a>
-                                    
+                                    <a href="" data-path="one">Бенедетто ди Биндо Бергоньоне,</a>
+                                    <a href="" data-path="two">Амброджо Биссоло,</a>
+                                    <a href="">Франческо Больтраффио,</a>
+                                    <a href="">Джованни Бонсиньори,</a>
+                                    <a href="">Франческо Боттичини,</a>
+                                    <a href="">Рафаэлло Брамантино Бреа,</a>
+                                    <a href="">Людовико Бьяджо д’Антонио Туччи</a>
+                                    <a href="">Веккьетта</a>
+                                    <a href="">Андреа</a>
+                                    <a href="">Верроккьо</a>
+                                    <a href="">Доменико</a>
+                                    <a href="">Гирландайо</a>
+                                    <a href="">Беноццо Гоццоли Граначчи,</a>
+                                    <a href="">Франческо</a>
+                                    <a href="">Грегорио ди Чекко</a>
+                                    <a href="">Джованни да Удине</a>
+                                    <a href="">Джованни ди Паоло Джорджоне</a>
+                                    <a href="">Парентино, Бернардо</a>
+                                    <a href="">Пезеллино</a>
+                                    <a href="">Пьетро Перуджино</a>
+                                    <a href="">Перуцци, Бальдассаре</a>
+                                    <a href="">Пизанелло</a>
+                                    <a href="">Пинтуриккьо</a>
 
-                                    
-                                        <a href="">Парентино, Бернардо</a>
-                                        <a href="">Пезеллино</a>
-                                        <a href="">Пьетро Перуджино</a>
-                                        <a href="">Перуцци, Бальдассаре</a>
-                                        <a href="">Пизанелло</a>
-                                        <a href="">Пинтуриккьо</a>
-                                    
                                 </span>
                             </p>
 
@@ -895,16 +902,24 @@
                         <p class="contacts__p--request-call">
                             Заказать обратный звонок
                         </p>
-                        <input class="contacts__input" placeholder="Имя*">
-                        <input class="contacts__input" placeholder="Телефон*">
+                        <input class="contacts__input" placeholder="Имя*" name="Имя" data-validate-field="name"
+                            id="name" required>
+                        <input class="contacts__input" name="tel" type="tel" placeholder="Телефон*"
+                            data-validate-field="tel" id="tel" required data-validate-rules="rules">
                         <button class="contacts__button button__transparent" type="submit">
                             Заказать
                         </button>
                         <p class="contacts__p--reach">
                             Связаться в один клик
                         </p>
-                       <img src="./img/Whatsapp.png" class="contacts__img--whatsapp">
-                       <img src="./img/Telegram.png">
+                        <a href="whatsapp://send?text=Hello&phone=+31611111111&abid=+31611111111">
+                            <img src="./img/Whatsapp.png" class="contacts__img--whatsapp">
+                        </a>
+                        <a href="tg://resolve?domain=NikName">
+                            <img src="./img/Telegram.png">
+                        </a>
+
+
                     </div>
                     <div class="contacts__right-part">
                         <div class="container">
@@ -924,17 +939,17 @@
                 </svg>
             </div>
             <div class="footer__div-container">
-                <a href="" class="footer__a">
+                <a href="https://vk.com/" class="footer__a">
                     <svg class="footer__svg--social">
                         <use xlink:href='../img/sprite.svg#vk' />
                     </svg>
                 </a>
-                <a href="" class="footer__a">
+                <a href="https://www.instagram.com" class="footer__a">
                     <svg class="footer__svg--social">
                         <use xlink:href='../img/sprite.svg#go' />
                     </svg>
                 </a>
-                <a href="" class="footer__a">
+                <a href="https://ru-ru.facebook.com/" class="footer__a">
                     <svg class="footer__svg--social">
                         <use xlink:href='../img/sprite.svg#fb' />
                     </svg>
@@ -988,6 +1003,7 @@
     <script src="./js/swiper-3.js"></script>
     <script src="./js/events.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/tabs.js"></script>
 
 
 
@@ -1025,6 +1041,55 @@
 
 
         }
+    </script>
+
+    <script src="./js/inputmask.min.js"></script>
+    <script>
+        var selector = document.querySelector("input[type='tel']");
+        var im = new Inputmask("+7 (999)-999-99-99");
+        im.mask(selector);
+    </script>
+
+
+    <script src="./js/just-validate.min.js"></script>
+    <script>
+        new JustValidate('.form', {
+            colorWrong: '#FF5C00',
+            rules: {
+                name: {
+                    required: true,
+                    minLength: 2,
+                    maxLength: 10
+                },
+                tel: {
+                    required: true,
+                    function: (name, value) => {
+                        const phone = selector.inputmask.unmaskedvalue()
+                        return Number(phone) && phone.length === 10
+                    }
+                },
+                mail: {
+                    required: true,
+                    email: true
+                },
+
+            },
+
+            messages: {
+
+                name: {
+                    required: 'Как вас зовут?'
+                },
+                tel: {
+                    required: 'Укажите ваш телефон'
+                },
+                mail: {
+                    required: 'Укажите ваш email'
+                },
+            },
+        });
+
+
     </script>
 
 
