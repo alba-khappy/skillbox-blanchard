@@ -118,6 +118,50 @@ button {
     margin-right: 107px;
 }
 
+.header--wrapper-nav-a {
+    display: flex;
+}
+
+.header__li--close-menu {
+    display: none;
+}
+
+.btn-reset {
+    display: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .burger {
+    position: relative;
+    width: 49px;
+    height: 36px;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+  }
+  
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 78%;
+  }
+  
+  .burger__line:nth-child(3) {
+    width: 66%;
+    top: auto;
+    bottom: 0;
+  }
+
 .header__svg--logo {
     width: 173px;
     height: 100px;
@@ -173,6 +217,8 @@ height: 23px;
 }
 
 .header__div--gray {
+    position: relative;
+    z-index: 1;
     height: 70px;
     background: rgba(0, 0, 0, 0.4);
     color: #FFFFFF;
@@ -230,6 +276,10 @@ height: 23px;
     z-index: 100;
 }
 
+.header__div--input-wrapper-1 {
+    display: none;
+}
+
 .header__div--input-wrapper:focus {
     outline: none;
     border: 2px solid #7943A4;
@@ -255,8 +305,8 @@ height: 23px;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.85);
     position: absolute;
-    top: 33px;
-    right: 59px;
+    margin-bottom: -30px;
+    margin-left: 15px;
 }
 
 .header__div--svg {
@@ -655,6 +705,10 @@ div.swiper-style > div.swiper-button-prev-1:hover, div.swiper-button-next-1:hove
     display: flex;
   }
 
+.catalog__half--right-part {
+    margin-left: 20px;
+}
+
 .catalog__wrapper-h2-img {
     display: flex;
     justify-content: space-between;
@@ -694,9 +748,17 @@ div.swiper-style > div.swiper-button-prev-1:hover, div.swiper-button-next-1:hove
 .tab-content {
     display: none;
   }
-
-.tab-content-active {
+  
+.tab-content-active{
     display: flex;
+}
+
+.tab-content-artist {
+      display: none;
+  }
+
+.tab-content-active-artist{
+    display: block;
 }
 
 .catalog__half {
@@ -708,15 +770,22 @@ div.swiper-style > div.swiper-button-prev-1:hover, div.swiper-button-next-1:hove
     height: 500px;
     background-repeat: no-repeat;
     margin-right: 20px;
-}
-
-.catalog__half--left-part--1 {
+    background-position: center;
     background-image: url(../img/image\ 3.jpg);
 }
 
-.catalog__half--left-part--2 {
-    background-image: url(../img/e1.jpg);
+.catalog__half--left-part-empty {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    background-color: #C283F3;
 }
+
+.catalog__half--left-part-container {
+    flex-direction: column;
+}
+
 
 h3 {
     font-size: 24px;
@@ -747,7 +816,7 @@ h3 {
 /*accordion*/
 
 #accordion {
-    height: 1140px;
+    height: auto;
 }
 
 .accordion-container.ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-icons.ui-accordion-header-collapsed.ui-corner-all {
@@ -903,7 +972,8 @@ div.accordion-container.ui-state-hover~.accordion-p-faq.accordion-height.ui-acco
     flex-direction: column;
 }
 
-.accordion-div-flex>a {
+.accordion-div-flex > a {
+    color: #333333;
     margin: 5px 0;
     width: 200px;
     line-height: 24px;
@@ -1425,7 +1495,11 @@ div.progects-swiper-slide {
     margin-bottom: 20px;
 }
 
-.contacts__img--whatsapp {
+.contacts__a {
+    display: inline-block;
+}
+
+.contacts__a--whatsapp {
     margin-right: 15px;
 }
 
@@ -1514,3 +1588,6 @@ footer {
 .footer__svg--social:nth-child(2) {
     margin: 0 20px;
 }
+
+
+

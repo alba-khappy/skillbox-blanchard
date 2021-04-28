@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper-1', {
   slidesPerView: 3,
   slidesPerColumn: 1,
   spaceBetween: 30,
+  slidesPerGroup: 3,
 
   // If we need pagination
   pagination: {
