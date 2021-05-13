@@ -630,11 +630,7 @@ div.swiper-pagination.swiper-pagination-1, div.swiper-pagination.swiper-paginati
 }
 
 div.swiper-style > div.swiper-button-prev-1, div.swiper-button-next-1, div.swiper-style > div.swiper-button-prev-2, div.swiper-button-next-2, div.swiper-style > div.swiper-button-prev-3, div.swiper-button-next-3 {
-    position: absolute;
     top: 15px;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
     margin: 0;
     width: 30px;
     min-width: 30px;
@@ -717,25 +713,52 @@ div.swiper-style > div.swiper-button-prev-1:hover, div.swiper-button-next-1:hove
     margin-bottom: 17px;
 }
 
-.catalog--wrapper-img {
-    width: 60px;
-    height: 60px;
+.catalog__ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 65%;
 }
 
-.catalog__img:hover {
+
+.catalog__img-btn{
+ background-size: contain;
+ width: 50px;
+ height: 50px;
+}
+
+.catalog__img-btn-1 {
+    background-image: url(../img/f1.png);
+}
+
+.catalog__img-btn-2 {
+    background-image: url(../img/f2.png);
+}
+
+.catalog__img-btn-3 {
+    background-image: url(../img/f3.png);
+}
+
+.catalog__img-btn-4 {
+    background-image: url(../img/f4.png);
+}
+
+.catalog__img-btn-5 {
+    background-image: url(../img/f5.png);
+}
+
+.catalog__img-btn:hover {
     box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7);
     border-radius: 30px;
 }
 
-.catalog__img:active {
-    border: 2px solid #9D5CD0;
+.catalog__img-btn:focus {
+    border: 5px solid white;
     padding: 5px;
+    box-shadow: 0 0 0px 2px #9D5CD0;
 }
 
-.catalog__img:focus {
+.catalog__img-btn:active {
     outline: none;
     border: 2px solid #9D5CD0;
     border-radius: 30px;
@@ -996,7 +1019,7 @@ div.accordion-container.ui-state-hover~.accordion-p-faq.accordion-height.ui-acco
 
 /*events*/
 
-.events__wrapper-div {
+.events__wrapper-ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1005,21 +1028,22 @@ div.accordion-container.ui-state-hover~.accordion-p-faq.accordion-height.ui-acco
     margin-top: 17px;
 }
 
-.events__wrapper-div-open {
+.events__wrapper-ul-open {
     height: auto;
 }
 
-.events__div {
+.events__li {
     width: 500px;
     margin-bottom: 50px;
+    line-height: 0;
 }
 
-.events__div--description {
+.events__li--description {
     height: 400px;
     border-right: 1px solid #CACACA;
     border-bottom: 1px solid #CACACA;
     border-left: 1px solid #CACACA;
-    padding-bottom: 45px;
+    padding: 15px 20px 45px 50px;
 }
 
 .events__h3-p-container {
@@ -1033,12 +1057,11 @@ div.accordion-container.ui-state-hover~.accordion-p-faq.accordion-height.ui-acco
     height: 300px;
 }
 
-.events__div--description-wrapper-p {
+.events__li--description-wrapper-p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: -10px;
-    padding-top: 10px;
+    padding-top: 3px;
 }
 
 .events__p--place-date {
@@ -1046,23 +1069,16 @@ div.accordion-container.ui-state-hover~.accordion-p-faq.accordion-height.ui-acco
     font-size: 12px;
     line-height: 16px;
     text-align: right;
-    margin-right: 20px;
-    margin-top: 3px;
     color: #999999;
 }
 
-.events__h3 {
-    margin: 0 50px;
-}
-
 .events__p {
-    margin: 5px 50px 80px 50px;
+    line-height: 32px;
 }
 
 .events__a {
     color: #9D5CD0;
     position: relative;
-    margin-left: 50px;
     bottom: -12px;
     max-width: 102px;
     text-align: center;
@@ -1168,7 +1184,7 @@ div.accordion-container.ui-state-hover~.accordion-p-faq.accordion-height.ui-acco
     border: 1px solid #C283F3;
 }
 
-.check__input:checked+span+span.check__box-text {
+.check__input:checked + span + .check__box-text {
     color: #C283F3;
 }
 
@@ -1268,7 +1284,7 @@ div.swiper-style > div.swiper-button-prev-2, div.swiper-button-next-2 {
     margin-left: 23px;
 }
 
-.swiper-slide--p1, .swiper-slide--p2 {
+.swiper-slide--h3, .swiper-slide--h3 {
     color: #FFFFFF;
     font-size: 16px;
 }
@@ -1409,7 +1425,7 @@ div.progects-swiper-slide {
     cursor: pointer;
 }
 
-.tooltip__icon>svg {
+.tooltip__icon > svg, .tooltip__icon:focus {
     outline: none;
 }
 
@@ -1513,6 +1529,10 @@ div.progects-swiper-slide {
     height: 700px;
     padding: 124px 0 0 160px;
     border: 1px solid #CACACA;
+}
+
+.js-validate-error-label {
+    margin-bottom: 20px;
 }
 
 .contacts__svg--mobile-connection {

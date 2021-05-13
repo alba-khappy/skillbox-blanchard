@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.catalog--wrapper-img').forEach(function(tabsBtn) {
+    document.querySelectorAll('.catalog--li').forEach(function(tabsBtn) {
         tabsBtn.addEventListener('click', function(event){
             const path = event.currentTarget.dataset.path;
             document.querySelectorAll('.tab-content').forEach(function(tabContent) {

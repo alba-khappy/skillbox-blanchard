@@ -31,7 +31,9 @@
                     <svg class="header__svg--loupe">
                         <use xlink:href='../img/sprite.svg#loupe' />
                     </svg>
-                    <input class="header__div--input" placeholder="Поиск по сайту">
+                    <form name="search" action="">
+                        <input class="header__div--input" placeholder="Поиск по сайту">
+                    </form>
                 </div>
                 <div class="header--wrapper-nav-a">
                     <nav id="nav" class="header-nav">
@@ -265,7 +267,38 @@
             <section class="container-block catalog" id="#catalog">
                 <div class="catalog__wrapper-h2-img">
                     <h2 class="catalog__h2">Каталог</h2>
-                    <div class="catalog--wrapper-img" data-path="one">
+                    <ul class="catalog__ul">
+                        <li class="catalog--li" data-path="one">
+                            <button class="catalog__img-btn catalog__img-btn-1" tabindex="0">
+
+                            </button>
+                        </li>
+                        <li class="catalog--li" data-path="two">
+                            <button class="catalog__img-btn catalog__img-btn-2" tabindex="0">
+
+                            </button>
+                        </li>
+                        <li class="catalog--li" data-path="three">
+                            <button class="catalog__img-btn catalog__img-btn-3" tabindex="0">
+
+                            </button>
+                        </li>
+                        <li class="catalog--li" data-path="four">
+                            <button class="catalog__img-btn catalog__img-btn-4" tabindex="0">
+
+                            </button>
+                        </li>
+                        <li class="catalog--li" data-path="five">
+                            <button class="catalog__img-btn catalog__img-btn-5" tabindex="0">
+
+                            </button>
+                        </li>
+                    </ul>
+
+
+
+
+                    <!-- <div class="catalog--wrapper-img" data-path="one">
                         <img src="./img/f1.png" class="catalog__img" tabindex="0">
                     </div>
                     <div class="catalog--wrapper-img" data-path="two">
@@ -279,7 +312,7 @@
                     </div>
                     <div class="catalog--wrapper-img" data-path="five">
                         <img src="./img/f5.png" class="catalog__img" tabindex="0">
-                    </div>
+                    </div> -->
                 </div>
 
                 <p class="catalog__p tab-content tab-content-active" data-target="one">
@@ -330,7 +363,8 @@
                 <div class="catalog__wrapper">
 
                     <div class="catalog__half">
-                        <div class="catalog__half--left-part-container tab-content-artist tab-content-active-artist" data-target="one-a">
+                        <div class="catalog__half--left-part-container tab-content-artist tab-content-active-artist"
+                            data-target="one-a">
                             <div class="catalog__half--left-part"></div>
 
                             <h3 class="catalog__h3--name">
@@ -366,21 +400,32 @@
                             <p class="accordion-p-faq accordion-height">
                                 <span class="accordion-div-flex">
 
-                                    <a href="" data-path="one-a" class="accordion-a--artist" onclick="event.preventDefault()">Бенедетто ди Биндо
+                                    <a href="" data-path="one-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Бенедетто ди Биндо
                                         Бергоньоне,</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist" onclick="event.preventDefault()">Амброджо Биссоло,</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist" onclick="event.preventDefault()">Франческо
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Амброджо Биссоло,</a>
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Франческо
                                         Больтраффио,</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist" onclick="event.preventDefault()">Джованни Бонсиньори,</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist" onclick="event.preventDefault()">Франческо Боттичини,</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist" onclick="event.preventDefault()">Рафаэлло Брамантино
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Джованни Бонсиньори,</a>
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Франческо Боттичини,</a>
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Рафаэлло Брамантино
                                         Бреа,</a>
-                                    <a href="" data-path="seven-a" class="accordion-a--artist" onclick="event.preventDefault()">Людовико Бьяджо д’Антонио
+                                    <a href="" data-path="seven-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Людовико Бьяджо д’Антонио
                                         Туччи</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist" onclick="event.preventDefault()">Веккьетта</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist" onclick="event.preventDefault()">Андреа</a>
-                                    <a href="" data-path="two-a" class="accordion-a--artist"onclick="event.preventDefault()">Верроккьо</a>
-                                    <a href="" data-path="one-a" class="accordion-a--artist" onclick="event.preventDefault()">Доменико Гирландайо</a>
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Веккьетта</a>
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Андреа</a>
+                                    <a href="" data-path="two-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Верроккьо</a>
+                                    <a href="" data-path="one-a" class="accordion-a--artist"
+                                        onclick="event.preventDefault()">Доменико Гирландайо</a>
                                     <a href="" data-path="two-a">Беноццо Гоццоли Граначчи,</a>
                                     <a href="" data-path="two-a">Франческо</a>
                                     <a href="" data-path="two-a">Грегорио ди Чекко</a>
@@ -478,11 +523,11 @@
                 <h2>
                     События
                 </h2>
-                <div class="events__wrapper-div">
-                    <div class="events__div">
+                <ul class="events__wrapper-ul">
+                    <li class="events__li">
                         <img src="./img/e1.jpg" alt="Книжная гравюра">
-                        <div class="events__div--description">
-                            <div class="events__div--description-wrapper-p">
+                        <div class="events__li--description">
+                            <div class="events__li--description-wrapper-p">
                                 <p class="events__p--place-date">
                                     Музей им. Щусева
                                 </p>
@@ -505,12 +550,12 @@
                                 <a href="#" class="events__a">Подробнее</a>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="events__div">
+                    <li class="events__li">
                         <img src="./img/e2.jpg" alt="Книжная гравюра">
-                        <div class="events__div--description">
-                            <div class="events__div--description-wrapper-p">
+                        <div class="events__li--description">
+                            <div class="events__li--description-wrapper-p">
                                 <p class="events__p--place-date">
                                     ММОМА
                                 </p>
@@ -532,12 +577,12 @@
                                 <a href="#" class="events__a">Подробнее</a>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="events__div">
+                    <li class="events__li">
                         <img src="./img/e3.jpg" alt="Книжная гравюра">
-                        <div class="events__div--description">
-                            <div class="events__div--description-wrapper-p">
+                        <div class="events__li--description">
+                            <div class="events__li--description-wrapper-p">
                                 <p class="events__p--place-date">
                                     Еврейский музей
                                 </p>
@@ -559,13 +604,13 @@
                                 <a href="#" class="events__a">Подробнее</a>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
 
-                    <div class="events__div">
+                    <li class="events__li">
                         <img src="./img/e4.jpg" alt="Книжная гравюра">
-                        <div class="events__div--description">
-                            <div class="events__div--description-wrapper-p">
+                        <div class="events__li--description">
+                            <div class="events__li--description-wrapper-p">
                                 <p class="events__p--place-date">
                                     Третьяковка на Крымском валу
                                 </p>
@@ -586,12 +631,12 @@
                                 <a href="#" class="events__a">Подробнее</a>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="events__div">
+                    <li class="events__li">
                         <img src="./img/e5.jpg" alt="Книжная гравюра">
-                        <div class="events__div--description">
-                            <div class="events__div--description-wrapper-p">
+                        <div class="events__li--description">
+                            <div class="events__li--description-wrapper-p">
                                 <p class="events__p--place-date">
                                     ММАМ
                                 </p>
@@ -614,10 +659,8 @@
                                 <a href="#" class="events__a">Подробнее</a>
                             </div>
                         </div>
-                    </div>
-
-
-                </div>
+                    </li>
+                </ul>
                 <div class="events__button--align">
                     <button class="events__button button__transparent">Все события</button>
                 </div>
@@ -749,8 +792,8 @@
                                 <img src="./img/ed1.jpg" class="swiper-slide__img">
                                 <div class="swiper--description">
                                     <div class="swiper--description--p-wrapper">
-                                        <p class="swiper-slide--p1">Искусство цвета</p>
-                                        <p class="swiper-slide--p2">Иттен, Иоханнес</p>
+                                        <h3 class="swiper-slide--h3">Искусство цвета</h3>
+                                        <h3 class="swiper-slide--h3">Иттен, Иоханнес</h3>
                                         <button type="button"
                                             class="editions__button button__transparent">Заказать</button>
                                     </div>
@@ -976,21 +1019,25 @@
                         <p class="contacts__p--request-call">
                             Заказать обратный звонок
                         </p>
-                        <input class="contacts__input" placeholder="Имя*" name="Имя" data-validate-field="name"
-                            id="name" required>
-                        <input class="contacts__input" name="tel" type="tel" placeholder="Телефон*"
-                            data-validate-field="tel" id="tel" required data-validate-rules="rules">
-                        <button class="contacts__button button__transparent" type="submit">
-                            Заказать
-                        </button>
+                        <form action="" class="form">
+                            <input class="contacts__input" placeholder="Имя*" name="Имя" data-validate-field="name"
+                                id="name" required>
+                            <input class="contacts__input" name="tel" type="tel" placeholder="Телефон*"
+                                data-validate-field="tel" id="tel" required data-validate-rules="rules">
+                            <button class="contacts__button button__transparent" type="submit">
+                                Заказать
+                            </button>
+                        </form>
+
                         <p class="contacts__p--reach">
                             Связаться в один клик
                         </p>
-                        <a href="whatsapp://send?text=Hello&phone=+31611111111&abid=+31611111111" class="contacts__a contacts__a--whatsapp">
+                        <a href="whatsapp://send?text=Hello&phone=+31611111111&abid=+31611111111"
+                            class="contacts__a contacts__a--whatsapp">
                             <img src="./img/Whatsapp.png">
                         </a>
                         <a href="tg://resolve?domain=NikName" class="contacts__a">
-                            <img src="./img/Telegram.png" >
+                            <img src="./img/Telegram.png">
                         </a>
 
 
@@ -1097,19 +1144,25 @@
             }),
 
                 myGeoObject = new ymaps.GeoObject({
-                    geometry: {
-                        type: "Point",
-                        coordinates: [55.76, 37.64]
-                    }
+                    
                 });
 
 
-            myPlacemark = new ymaps.Placemark([48.872197, 2.354224], {}, {
-                iconLayout: 'default#image',
-                iconImageHref: './img/Subtract.png',
-                iconImageSize: [30, 42],
-                iconImageOffset: [-5, -38]
-            });
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: './img/mark.svg',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        }),
 
 
             myMap.geoObjects.add(myGeoObject);
@@ -1130,7 +1183,7 @@
     <script src="./js/just-validate.min.js"></script>
     <script>
         new JustValidate('.form', {
-            colorWrong: '#FF5C00',
+            colorWrong: 'red',
             rules: {
                 name: {
                     required: true,
