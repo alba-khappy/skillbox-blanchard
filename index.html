@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-media.css">
 
@@ -64,13 +65,12 @@
                     <ul class="header__ul">
                         <li class="header__li--gray" tabindex="0">
                             <select name="select" id="selectCustom" class="header__select">
-                                <option value="">Реализм</option>
-                                <option>Реализм</option>
-                                <option>Реализм</option>
-                                <option>Реализм</option>
-                                <option>Реализм</option>
-                                <option>Реализм</option>
-                                <option>Реализм</option>
+                                <option value="" class="header__option">Реализм</option>
+                                <option class="header__option-1">Тинторетто</option>
+                                <option class="header__option-2">Фридрих</option>
+                                <option class="header__option-3">Леонардо</option>
+                                <option class="header__option-4">Верроккьо</option>
+                                
                             </select>
                         </li>
                         <li class="header__li--gray" tabindex="0">
@@ -974,6 +974,7 @@
                 <div class="swiper-container swiper-3 swiper-style" id="third-swiper">
 
                     <div class="swiper-button-prev swiper-button-prev-3"></div>
+                    <div class="swiper-button-next swiper-button-next-3"></div>
 
                     <div class="swiper-wrapper">
                         <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png" class="progects__img">
@@ -996,7 +997,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-button-next swiper-button-next-3"></div>
+                    
 
                 </div>
                 <div>
@@ -1130,6 +1131,7 @@
 
 
 
+
     <!--map-->
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
@@ -1220,6 +1222,13 @@
 
 
     </script>
+
+
+
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+        <script>
+            new SimpleBar(document.getElementById('myScroll'), { autoHide: false, scrollbarMaxSize: 70 });
+</script>
 
 
 

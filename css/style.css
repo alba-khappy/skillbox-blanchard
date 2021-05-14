@@ -114,6 +114,22 @@ button {
     color: #FFFFFF;
 }
 
+.header__option-1 {
+    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3\ \(1\).jpg);
+}
+
+.header__option-2 {
+    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3\ \(1\).jpg);
+}
+
+.header__option-3 {
+    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3\ \(1\).jpg);
+}
+
+.header__option-4 {
+    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3\ \(1\).jpg);
+}
+
 .header-nav {
     margin-right: 107px;
 }
@@ -342,15 +358,29 @@ height: 23px;
 
 .choices__list.choices__list--dropdown {
     background-color: transparent;
+    border: none;
 }
 
 .choices__list--dropdown .choices__item--selectable {
     padding: 0;
 }
 
-.choices__list--dropdown .choices__item--selectable.is-highlighted {
-    background: rgb(63, 62, 62);
-    ;
+.choices__item.choices__item--choice.is-selected.choices__placeholder.choices__item--selectable.is-highlighted {
+    display: none;
+}
+
+#choices--selectCustom-item-choice-1, #choices--selectCustom-item-choice-2, #choices--selectCustom-item-choice-5 {
+    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg);
+    height: 50px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#choices--selectCustom-item-choice-3, #choices--selectCustom-item-choice-4 {
+    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg);
+    height: 50px;
+    background-size: cover;
+    margin-bottom: 20px;
 }
 
 .header__li--gray>.choices::after {
@@ -574,7 +604,7 @@ h2 {
 
 #gallerySelect~div.choices__list.choices__list--dropdown {
     background: transparent;
-    border: 1px solid #999999;
+    
     color: #999999;
 }
 
