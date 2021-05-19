@@ -17,9 +17,10 @@
 </head>
 
 <body>
-    <div class="body__container">
-        <header class="">
-            <div class="header__div header__div--black container-block">
+
+    <header>
+        <div class="container-section header__container">
+            <div class="header__div ">
                 <button class="btn-reset burger" aria-label="Открыть меню" id="burger">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
@@ -32,121 +33,139 @@
                     <svg class="header__svg--loupe">
                         <use xlink:href='../img/sprite.svg#loupe' />
                     </svg>
-                    <form name="search" action="">
-                        <input class="header__div--input" placeholder="Поиск по сайту">
-                    </form>
-                </div>
-                <div class="header--wrapper-nav-a">
-                    <nav id="nav" class="header-nav">
-                        <ul class="header__ul">
-                            <li class="header__li--close-menu">X</li>
-                            <li class="header__li--black"><a class="header__li--a" href="#about">О нас</a></li>
-                            <li class="header__li--black"><a class="header__li--a" href="#gallery">Галерея</a></li>
-                            <li class="header__li--black"><a class="header__li--a" href="#catalog">Каталог</a></li>
-                            <li class="header__li--black"><a class="header__li--a" href="#events">События</a></li>
-                            <li class="header__li--black"><a class="header__li--a" href="#editions">Издания</a></li>
-                            <li class="header__li--black"><a class="header__li--a" href="#progects">Проекты</a></li>
-                            <li class="header__li--black"><a class="header__li--a" href="#contacts">Контакты</a></li>
-                        </ul>
-                    </nav>
 
-                    <a href="#" class="header__a">
-                        <svg class="header__svg--go">
-                            <use xlink:href='../img/sprite.svg#instagram' />
-                        </svg>
-                        Войти
-                    </a>
+                    <div class="input__wrapper">
+                        <form name="search" action="">
+                            <input class="header__div--input" placeholder="Поиск по сайту">
+                    </div>
                 </div>
+
             </div>
-
-
-            <div class="header__div header__div--gray container-block">
-                <nav class="header__div--nav-margin">
+            <div class="header--wrapper-nav-a">
+                <nav id="nav" class="header-nav">
                     <ul class="header__ul">
-                        <li class="header__li--gray" tabindex="0">
-                            <select name="select" id="selectCustom" class="header__select">
-                                <option value="" class="header__option">Реализм</option>
-                                <option class="header__option-1">Тинторетто</option>
-                                <option class="header__option-2">Фридрих</option>
-                                <option class="header__option-3">Леонардо</option>
-                                <option class="header__option-4">Верроккьо</option>
-                                
-                            </select>
-                        </li>
-                        <li class="header__li--gray" tabindex="0">
-                            <select name="select" id="selectCustom" class="header__select">
-                                <option value="">Импрессионизм</option>
-                                <option>Импрессионизм</option>
-                                <option>Импрессионизм</option>
-                                <option>Импрессионизм</option>
-                                <option>Импрессионизм</option>
-                                <option>Импрессионизм</option>
-                                <option>Импрессионизм</option>
-                            </select>
-                        </li>
-                        <li class="header__li--gray" tabindex="0">
-                            <select name="select" id="selectCustom" class="header__select">
-                                <option value="">Постимпрессионизм</option>
-                                <option>Постимпрессионизм</option>
-                                <option>Постимпрессионизм</option>
-                                <option>Постимпрессионизм</option>
-                                <option>Постимпрессионизм</option>
-                                <option>Постимпрессионизм</option>
-                                <option>Постимпрессионизм</option>
-                            </select>
-                        </li>
-                        <li class="header__li--gray" tabindex="0">
-                            <select name="select" id="selectCustom" class="header__select">
-                                <option value="">Реализм</option>
-                                <option>Авангард</option>
-                                <option>Авангард</option>
-                                <option>Авангард</option>
-                                <option>Авангард</option>
-                                <option>Авангард</option>
-                                <option>Авангард</option>
-                            </select>
-                        </li>
-                        <li class="header__li--gray" tabindex="0">
-                            <select name="select" id="selectCustom" class="header__select">
-                                <option value="">Футуризм</option>
-                                <option>Футуризм</option>
-                                <option>Футуризм</option>
-                                <option>Футуризм</option>
-                                <option>Футуризм</option>
-                                <option>Футуризм</option>
-                                <option>Футуризм</option>
-                            </select>
-                        </li>
+                        <li class="header__li--close-menu">X</li>
+                        <li class="header__li--black"><a class="header__li--a" href="#about">О нас</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#gallery">Галерея</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#catalog">Каталог</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#events">События</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#editions">Издания</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#progects">Проекты</a></li>
+                        <li class="header__li--black"><a class="header__li--a" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
 
-                <div class="header__div header__div--svg">
-                    <div class="header__div--input-wrapper header__div--input-wrapper-2">
-                        <svg class="header__svg--loupe">
-                            <use xlink:href='../img/sprite.svg#loupe' />
-                        </svg>
-                        <input class="header__div--input" placeholder="Поиск по сайту">
-                    </div>
+                <a href="#" class="header__a">
+                    <svg class="header__svg--go">
+                        <use xlink:href='../img/sprite.svg#instagram' />
+                    </svg>
+                    Войти
+                </a>
+            </div>
+        </div>
+        </div>
 
+        <div>
+            <div class="header__div header__div--gray">
+                <div class="container-section header__div--gray--container">
+                    <nav class="header__div--nav-margin">
+                        <ul class="header__ul">
+                            <li class="header__li--gray" tabindex="0">
+                                <select name="select" id="selectCustom" class="header__select">
+
+                                    <option value="" class="header__option">Реализм</option>
+                                    <option class="header__option-1">Тинторетто</option>
+                                    <option class="header__option-2">Фридрих</option>
+                                    <option class="header__option-3">Леонардо</option>
+                                    <option class="header__option-4">Верроккьо</option>
+
+                                </select>
+                            </li>
+                            <li class="header__li--gray" tabindex="0">
+                                <select name="select" id="selectCustom" class="header__select">
+                                    <option value="">Импрессионизм</option>
+                                    <option>Импрессионизм</option>
+                                    <option>Импрессионизм</option>
+                                    <option>Импрессионизм</option>
+                                    <option>Импрессионизм</option>
+                                    <option>Импрессионизм</option>
+                                    <option>Импрессионизм</option>
+                                </select>
+                            </li>
+                            <li class="header__li--gray" tabindex="0">
+                                <select name="select" id="selectCustom" class="header__select">
+                                    <option value="">Постимпрессионизм</option>
+                                    <option>Постимпрессионизм</option>
+                                    <option>Постимпрессионизм</option>
+                                    <option>Постимпрессионизм</option>
+                                    <option>Постимпрессионизм</option>
+                                    <option>Постимпрессионизм</option>
+                                    <option>Постимпрессионизм</option>
+                                </select>
+                            </li>
+                            <li class="header__li--gray" tabindex="0">
+                                <select name="select" id="selectCustom" class="header__select">
+                                    <option value="">Авангард</option>
+                                    <option>Авангард</option>
+                                    <option>Авангард</option>
+                                    <option>Авангард</option>
+                                    <option>Авангард</option>
+                                    <option>Авангард</option>
+                                    <option>Авангард</option>
+                                </select>
+                            </li>
+                            <li class="header__li--gray" tabindex="0">
+                                <select name="select" id="selectCustom" class="header__select">
+                                    <option value="">Футуризм</option>
+                                    <option>Футуризм</option>
+                                    <option>Футуризм</option>
+                                    <option>Футуризм</option>
+                                    <option>Футуризм</option>
+                                    <option>Футуризм</option>
+                                    <option>Футуризм</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__div header__div--svg">
+                        <div class="header__div--input-wrapper header__div--input-wrapper-2">
+                            <svg class="header__svg--loupe">
+                                <use xlink:href='../img/sprite.svg#loupe' />
+                            </svg>
+                            <input class="header__div--input" placeholder="Поиск по сайту">
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
 
+    </header>
+
+
+
+    <main>
         <!--section-hero-->
 
-        <section class="container-block section-hero">
-            <h1 class="section-hero__h1">Прикоснитесь к прекрасному</h1>
-            <p class="section-hero__p">Мы вынуждены отталкиваться от того, что реализация намеченных
-                плановых заданий создаёт предпосылки для новых предложений.
-            </p>
+        <section class="section-hero">
+            <div class="container-section">
+                <h1 class="section-hero__h1">Прикоснитесь к прекрасному</h1>
+                <p class="section-hero__p">Мы вынуждены отталкиваться от того, что реализация намеченных
+                    плановых заданий создаёт предпосылки для новых предложений.
+                </p>
 
-            <button class="section-hero__button" type="submit"><a href="#contacts">Подписаться на рассылку</a></button>
+                <button class="section-hero__button" type="submit"><a href="#contacts">Подписаться на
+                        рассылку</a></button>
+            </div>
+
 
         </section>
 
-        <main>
-            <!--about-->
-            <section class="container-block" id="#about">
+
+        <!--about-->
+        <section id="#about" class="about">
+            <div class="container-section">
                 <h2 class="about__h2">
                     О нас
                 </h2>
@@ -162,10 +181,13 @@
                     действия представителей оппозиции набирают популярность среди определенных слоев населения,
                     а значит, должны быть разоблачены.
                 </p>
-            </section>
+            </div>
+        </section>
 
-            <!--gallery-->
-            <section class="container-block gallery" id="gallery">
+        <!--gallery-->
+        <section class="gallery" id="gallery">
+            <div class="container-section gallery__container">
+
                 <div class="gallery__left-part">
                     <div>
                         <h2 class="gallery__h2">Галлерея</h2>
@@ -183,13 +205,17 @@
                     </p>
                 </div>
 
+
                 <div class="gallery__right-part">
 
 
                     <div class="swiper-container swiper-1 swiper-style" id="first-swiper">
-                        <div class="swiper-button-prev swiper-button-prev-1"></div>
-                        <div class="swiper-pagination swiper-pagination-1"></div>
-                        <div class="swiper-button-next swiper-button-next-1"></div>
+                        <div class="swiper-navigation">
+                            <div class="swiper-button-prev swiper-button-prev-1"></div>
+                            <div class="swiper-pagination swiper-pagination-1"></div>
+                            <div class="swiper-button-next swiper-button-next-1"></div>
+                        </div>
+
 
 
 
@@ -260,11 +286,14 @@
                         </div>
 
                     </div>
+                </div>
+            </div>
 
-            </section>
+        </section>
 
-            <!--catalog-->
-            <section class="container-block catalog" id="#catalog">
+        <!--catalog-->
+        <section class="catalog" id="#catalog">
+            <div class="container-section">
                 <div class="catalog__wrapper-h2-img">
                     <h2 class="catalog__h2">Каталог</h2>
                     <ul class="catalog__ul">
@@ -516,10 +545,12 @@
 
                 </div>
 
-            </section>
+            </div>
+        </section>
 
-            <!--events-->
-            <section class="container-block" id="events">
+        <!--events-->
+        <section id="events" class="events">
+            <div class="container-section">
                 <h2>
                     События
                 </h2>
@@ -664,10 +695,12 @@
                 <div class="events__button--align">
                     <button class="events__button button__transparent">Все события</button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--editions-->
-            <section class="container-block editions" id="editions">
+        <!--editions-->
+        <section class="editions" id="editions">
+            <div class="container-section editions__container">
                 <div class="editions__left-part">
                     <h2>
                         Издания
@@ -677,89 +710,77 @@
                     </h4>
 
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Бестселлеры</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Бестселлеры</span>
                     </div>
 
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Искусство</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Искусство</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Архитектура</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Архитектура</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Дизайн</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Дизайн</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Мода</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Мода</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Детям</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Детям</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Художественная литература</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Художественная литература</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Публицистика</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Публицистика</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Путеводители</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Путеводители</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Философия</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Философия</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Учебная литература</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Учебная литература</span>
                     </div>
                     <div class="checkbox">
-                        <label class="check">
-                            <input class="check__input" type="checkbox" required>
-                            <span class="check__box"></span>
-                            <span class="check__box-text">Журналы и газеты</span>
-                        </label>
+                        <input id="check-1" class="check__input visually-hidden" type="checkbox" required>
+                        <label for="check-1" class="check"></label>
+                        <span class="check__box"></span>
+                        <span class="check__box-text">Журналы и газеты</span>
                     </div>
 
 
@@ -780,11 +801,13 @@
                 <div class="editions__right-part">
 
                     <div class="swiper-container swiper-2 swiper-style">
-                        <div class="swiper-button-prev swiper-button-prev-2">
 
+                        <div class="swiper-navigation swiper-navigation__margin">
+                            <div class="swiper-button-prev swiper-button-prev-2"></div>
+                            <div class="swiper-pagination swiper-pagination-2"></div>
+                            <div class="swiper-button-next swiper-button-next-2"></div>
                         </div>
-                        <div class="swiper-pagination swiper-pagination-2"></div>
-                        <div class="swiper-button-next swiper-button-next-2"></div>
+
 
 
                         <div class="swiper-wrapper">
@@ -911,10 +934,12 @@
                     </div>
 
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--progects-->
-            <section class="container-block" id="progects">
+        <!--progects-->
+        <section id="progects" class="progects">
+            <div class="container-section">
                 <h2 class="progects__h2">
                     Проекты
                 </h2>
@@ -967,49 +992,74 @@
                     <a href="#" class="progects__a">blanchard-art.ru/projects/about</a>
                     </p>
                 </div>
-                <h3 class="progects__h3">
+                <h3>
                     Партнёры проектов:
                 </h3>
 
-                <div class="swiper-container swiper-3 swiper-style" id="third-swiper">
 
+                <div class="swiper-3__btn-wrapper">
                     <div class="swiper-button-prev swiper-button-prev-3"></div>
                     <div class="swiper-button-next swiper-button-next-3"></div>
+                </div>
 
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png" class="progects__img">
+
+                <div class="swiper-container-external">
+                    <div class="swiper-container swiper-3 swiper-style" id="third-swiper">
+
+
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p1.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p2.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p3.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p4.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p5.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p6.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p7.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p8.png"
+                                    class="progects__img">
+                            </div>
+                            <div class="swiper-slide progects-swiper-slide"><img src="./img/p9.png"
+                                    class="progects__img">
+                            </div>
                         </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p2.png" class="progects__img">
-                        </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p3.png" class="progects__img">
-                        </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p4.png" class="progects__img">
-                        </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p5.png" class="progects__img">
-                        </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p6.png" class="progects__img">
-                        </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p7.png" class="progects__img">
-                        </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p8.png" class="progects__img">
-                        </div>
-                        <div class="swiper-slide progects-swiper-slide"><img src="./img/p9.png" class="progects__img">
-                        </div>
+
                     </div>
 
-                    
 
+                    <div>
+
+                    </div>
                 </div>
-                <div>
+        </section>
 
-                </div>
-            </section>
+        <!--contacts-->
 
-            <!--contacts-->
-            <section id="contacts">
-                <h2 class="container-block contacts__h2">
+        <section id="contacts">
+            <div class="container-section">
+                <h2 class="contacts__h2">
                     Контакты
                 </h2>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container-section">
+
                 <div class="contacts__div-wrapper">
                     <div class="contacts__left-part">
                         <h3>Шоурум №4
@@ -1050,11 +1100,14 @@
                     </div>
 
                 </div>
+            </div>
 
-            </section>
-        </main>
+        </section>
+    </main>
 
-        <footer class="container-block">
+    <footer>
+        <div class="container-section footer__container ">
+
             <div class="footer__div-container">
                 <svg class="footer__svg--logo">
                     <use xlink:href='../img/sprite.svg#logo' />
@@ -1077,9 +1130,10 @@
                     </svg>
                 </a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    </div>
+
 
 
 
@@ -1146,28 +1200,28 @@
             }),
 
                 myGeoObject = new ymaps.GeoObject({
-                    
+
                 });
 
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: './img/mark.svg',
-            // Размеры метки.
-            iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
-        }),
+                hintContent: 'Собственный значок метки',
+                balloonContent: 'Это красивая метка'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: './img/mark.svg',
+                // Размеры метки.
+                iconImageSize: [30, 42],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-5, -38]
+            }),
 
 
-            myMap.geoObjects.add(myGeoObject);
+                myMap.geoObjects.add(myGeoObject);
             myMap.geoObjects.add(myPlacemark);
 
 
@@ -1225,10 +1279,10 @@
 
 
 
-<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-        <script>
-            new SimpleBar(document.getElementById('myScroll'), { autoHide: false, scrollbarMaxSize: 70 });
-</script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script>
+        new SimpleBar(document.getElementById('myScroll'), { autoHide: false, scrollbarMaxSize: 70 });
+    </script>
 
 
 
