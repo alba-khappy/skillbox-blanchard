@@ -8,6 +8,13 @@
         display: block;
     }
 
+    .header__div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
     .header--wrapper-nav-a {
         width: 200px;
     display: none;
@@ -161,7 +168,7 @@
     /*contacts*/
     
     .contacts__left-part {
-        padding: 124px 45px 0 50px;
+        padding: 124px 45px 0 0;
     }
 
 
@@ -180,4 +187,80 @@
     .header__div--input, .header__div--input-wrapper::after {
         display: none;
     }
+}
+
+
+
+
+@media (max-width:1599px) and (min-width:1025px) {
+    
+    .container-section {
+        padding: 0 50px;
+    }
+
+    .header__svg--loupe {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contacts__a > img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__svg--social {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media (max-width:1024px) and (min-width:769px) {
+    
+    .container-section {
+        padding: 0 50px;
+    }
+
+    .header__svg--loupe {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contacts__a > img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__svg--social {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    
+}
+
+@media (max-width:768px) and (min-width:320px) {
+    
+    .container-section {
+        padding: 0 25px;
+    }
+
+    .header__svg--loupe {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contacts__a > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer__svg--social {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    
 }

@@ -6,7 +6,6 @@ const swiper = new Swiper('.swiper-1', {
   slidesPerGroup: 3,
 
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 20
@@ -16,6 +15,10 @@ const swiper = new Swiper('.swiper-1', {
       spaceBetween: 20
     },
     1024: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1920: {
       slidesPerView: 3,
       spaceBetween: 30
     }

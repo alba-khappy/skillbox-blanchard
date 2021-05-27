@@ -4,6 +4,24 @@ const swiperSecond = new Swiper('.swiper-2', {
     loop: true,
     slidesPerView: 3,
     slidesPerColumn: 1,
+    breakpoints: {
+      320: {
+        slidesPerView:2,
+        spaceBetween:30
+      },
+      768: {
+        slidesPerView:2,
+        spaceBetween:35
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50
+      },
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      }
+    },
   
     pagination: {
       el: '.swiper-pagination-2',
